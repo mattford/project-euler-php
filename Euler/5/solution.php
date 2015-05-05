@@ -1,13 +1,12 @@
 <?php
 $start = microtime(true);
 $smallestMultiple = 0;
-$current = 1;
+$current = 20;
 while ($smallestMultiple == 0) {
-    echo $current."\n";
     for ($i = 1; $i <= 20; $i++) {
         if (fmod($current, $i) != 0) {
-            $current++;
-            //continue 2;
+            $current = $current +20;
+            continue 2;
         }
     }
     $smallestMultiple = $current;
