@@ -20,8 +20,4 @@ if ($currentNumber > $largestPrime) {
 echo "The largest prime factor of $number is $largestPrime\n";
 $end = microtime(true);
 $duration = $end - $start;
-echo "Ran in $duration ms";
-
-
-
-    
+echo "Ran in $duration ms";  
